@@ -1,2 +1,23 @@
-# api2captcha
-2captcha v2 api golang client pkg
+# anti-captcha
+
+Go library for accessing the 2captcha.com v2 API
+
+# Install
+
+```go
+go get github.com/zplzpl/api2captcha
+```
+
+# Usage
+
+```go
+import "github.com/zplzpl/api2captcha"
+
+func main() {
+    client := api2captcha.NewClient("your-key-here")
+    
+    balance, _ := client.GetBalance(context.Background())
+    
+    fmt.Println(balance)
+}
+```
