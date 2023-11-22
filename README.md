@@ -1,4 +1,4 @@
-# anti-captcha
+# 2captcha.com V2 API
 
 Go library for accessing the 2captcha.com v2 API
 
