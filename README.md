@@ -14,10 +14,20 @@ go get github.com/zplzpl/api2captcha
 import "github.com/zplzpl/api2captcha"
 
 func main() {
+	
     client := api2captcha.NewClient("your-key-here")
     
     balance, _ := client.GetBalance(context.Background())
     
     fmt.Println(balance)
+
+
+	// image to text
+    rs, err := cli.ImageToText(context.Background(), "img-base64")
+    if err != nil {
+        panic(err)
+    }
+
+    fmt.Println(rs.Text)
 }
 ```
